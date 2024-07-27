@@ -4,7 +4,7 @@
 1. Install the following npm packages `@reduxjs/toolkit` and `react-redux` 
 
 ## Setup the global redux store:
-1. To add global store, create store.js file and configure store with the help of configureStore fucntion which take reducer configuration.
+1. To add global store, create `store.js` file and configure store with the help of `configureStore` function which take reducer configuration.
 2. Import reducers and add them to store configuration.
 
 ```
@@ -50,7 +50,7 @@ root.render(
 );
 ```
 ## Create slices from redux store object
-1. Create slices from splitting redux state object in to multiple slices of state,
+1. Create `slices` from splitting the redux state object in to multiple slices of state.
 2. Slice is collections of reducers logics and actions for single feature of this application.
 ```
 import { createSlice } from "@reduxjs/toolkit";
