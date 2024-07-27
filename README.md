@@ -59,7 +59,7 @@ const initialState = [
     { id: '0', name: 'Dude Lebowski' },
     { id: '1', name: 'Neil Young' },
     { id: '2', name: 'Dave Gray' }
-]
+];
 
 const usersSlice = createSlice({
     name: 'users',
@@ -79,12 +79,14 @@ const usersSlice = createSlice({
             }
         }
     }
-})
+});
+export const { addUser } = usersSlice.actions;
+
 export default usersSlice.reducer;
 ```
 
 ## Create selector
-1. Create and export `Selector` in the slice file. So that way if the shape of state every changes then we don't need to change each components.
+1. Create and export `Selector` in the respective slice file. So that way if the shape of state ever changes then we don't need to change each components.
 ```
 export const selectAllUsers = (state) => state.users;
 ```
