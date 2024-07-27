@@ -52,6 +52,10 @@ root.render(
 ## Create slices from redux store object
 1. Create `slices` from splitting the redux state object in to multiple slices of state.
 2. Slice is collections of reducers logics and actions for single feature of this application.
+3. createSlice take 3 different arguments: 
+    1. `name` - Set the name of the reducer. same name will be used in your store reducer configuration.
+    2. `initialState` - Create a initial state and pass the initial state object.
+    3. `reducers` - Define different actions with-in your `reducers` object and export them.
 ```
 import { createSlice } from "@reduxjs/toolkit";
 
